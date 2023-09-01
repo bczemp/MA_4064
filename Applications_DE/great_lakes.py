@@ -82,4 +82,4 @@ huron_data = [point[1] for point in huron]
 erie_data = [point[1] for point in erie]
 ontario_data = [point[1] for point in ontario]
 
-plot.export_data(f"../data/Great_Lakes_q{PART}.csv", ["Time (years)", "Lake Huron", "Lake Erie", "Lake Ontario"], [time_data, huron_data, erie_data, ontario_data])
+if WRITE: plot.export_data(f"../data/Great_Lakes_q{PART}.csv", ["Time (years)", "Lake Huron", "Lake Erie", "Lake Ontario"], [time_data, huron_data, erie_data, ontario_data])
